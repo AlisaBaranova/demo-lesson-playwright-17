@@ -17,8 +17,8 @@ export class LoginPage {
   }
 
   async open() {
-      await this.page.goto(SERVICE_URL);
-    }
+    await this.page.goto(SERVICE_URL)
+  }
 
   async signIn(username: string, password: string) {
     await this.usernameField.fill(username)
